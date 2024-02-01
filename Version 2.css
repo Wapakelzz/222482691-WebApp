@@ -1,0 +1,13 @@
+table,th,td{
+    border: 5px solid black;
+    border-collapse: collapse;
+}       
+body {
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/244/1020/desktop-wallpaper-white-gaming-backgrounds-white-gaming.jpg');
+}
+label
+{
+    display: block;
+    margin: 5px 0;
+
+}

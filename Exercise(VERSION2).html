@@ -5,52 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        table,th,td{
-            border: 5px solid black;
-            border-collapse: collapse;
-        }       
-        body {
-            background-image: url('https://e1.pxfuel.com/desktop-wallpaper/244/1020/desktop-wallpaper-white-gaming-backgrounds-white-gaming.jpg');
-        }
-    </style>   
-    <script>
-        function validateForm() {
-            var username = document.getElementById("Fname").value;
-            var password = document.getElementById("Password").value;
-
-            if (username.length < 8 || !/[!@#$%^&*(),.?":{}|<>]/.test(username)) {
-                alert("Username must have at least 8 characters and include a special character");
-                return false;
-
-            }
-
-            if (password.length < 8 || !/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
-                alert("Password must have at least 8 characters and include special character");
-                return false;
-            }
-            return true;
-        }
-    </script>
-
+    <link rel="stylesheet" href="Version 2.css">  
 </head>
 <body>
+    <section>
     <h3>Links</h3>
     <nav>
     <li><a href="#Image">Image</a> </li>
     <li><a href="#Forms">Forms</a> </li>  
     <li><a href="#Table">Table</a> </li>
     <li><a href="#Audio and Video">Audio and Video</a> </li>
+    <li><a href="#Google Map">Google Map</a> </li>
     <nav>
     <section id="Image" >
     <h3>Image</h3>
     <img src="data:image/jpeg;base64,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" alt="Pacquiao"
      >
+    </section>
     <section>
-
         <section id="Forms" >
         <h3>Forms</h3>
-
         <form action="/action_page.php">
             <label for="usrname">Username</label>
             <input type="text" id="usrname" name="usrname"
@@ -71,8 +45,6 @@
             <label for="date">Date</label>
             <input type="text" id="date" name="date"
          required>
-
-         <input type="submit" value="Submit">
             <section id="message">
                 <h3>Password must contain the following:</h3>
                 <p id="letter" class="invalid">A <b> lowercase</b>letter</p>
@@ -84,51 +56,7 @@
             </p>
                 
         </section>
-
-    <script>
-        var myInput = document.getElementById("psw");
-        var letter = document.getElementById("letter");
-        var capital = document.getElementById("capital");
-        var number = document.getElementById("number");
-        var length = document.getElementById("length");
-
-        myInput.onfocus = function() {
-            document.getElementById("message").style.display = "block";
-        }
-
-        myInput.onblur = function() {
-            document.getElementById("message").style.display = "none";
-        }
-
-        myInput.onekey = function(). {
-            var lowerCaseLetters = /[a-z]/g;
-            if(myInput.value.match(lowerCaseLetters)) {
-                letter.classList.remove("invalid");
-                letter.classList.add("valid");   
-            } else{
-                letter.classList.remove("valid");
-                letter.classList.add("invalid");
-            }
-            var number = /[0-9]/g;
-            if(myInput.value.match(number)) {
-                number.classList.remove("invalid");
-                number.classList.add("valid");
-            }else{
-                number.classList.remove("valid");
-                number.classList.add("invalid");
-            }
-            if(myInput.value.length >=8) {
-                length.classList.remove("invalid");
-                length.classList.add("valid");
-            }else{
-                length.classList.remove("valid");
-                length.classList.add("invalid");
-            }
-        }
-     
-    </script>  
-    <br>
-        
+    </script> 
           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
           <label class="form-check-input">Male</label>
           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
@@ -159,6 +87,7 @@
                 <td>30</td>
                 <td>Los Angeles<td>
          </table>
+        </section>
 
          <section>
             <section id="Audio and Video" >
@@ -175,13 +104,22 @@
                 <source src="movie.ogg" type="video/ogg">
 
             </video>
+            </section>
+            <section>
+                <section id="Google Map" >
+                <h3>Google Map</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8002526.874234009!2d117.32730205889713!3d11.660083815099458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x324053215f87de63%3A0x784790ef7a29da57!2sPhilippines!5e0!3m2!1sen!2sph!4v1706781943583!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="500"
+                height="400" style="border:0;" allowfullscreen=""loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
 
 <br>
 <br>
 <footer>Author: Estillore, Axel M.</footer>
 
 
+<script src="Version 2.js">
 
+</script>
 
 </body>
 </html>
