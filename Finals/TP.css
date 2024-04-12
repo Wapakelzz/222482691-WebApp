@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.timeline-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.timeline-title {
+font-size: 24px;
+margin-bottom: 20px;
+}
+.timeline-image {
+max-width: 100%;
+height: auto;
+margin-bottom: 20px;
+border-radius: 8px;
+}
+.timeline {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.timeline-item {
+padding: 20px;
+border-left: 2px solid #333;
+position: relative;
+}
+.timeline-item::before {
+content: "";
+position: absolute;
+top: 50%;
+left: -8px;
+transform: translateY(-50%);
+width: 16px;
+height: 16px;
+background-color: #333;
+border-radius: 50%;
+}
+.timeline-item h3 {
+margin-top: 0;
+}
+.timeline-item p {
+margin-bottom: 0;
+}
